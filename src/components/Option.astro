@@ -1,0 +1,20 @@
+---
+interface Props {
+	name: string;
+	values: string[];
+	description: string;
+}
+
+const {name, values, description} = Astro.props
+---
+
+<div style="margin-bottom: 1rem;">
+<h3 style="margin: 0;">{name}</h3>
+<span style="display: flex; flex-direction: row; gap: 0.5rem;">
+{values.map((v) => (
+<p style="margin: 0; font-style: italic;">{v}</p>
+))}
+</span>
+
+	<p style="margin: 0;">{description}</p>
+</div>

@@ -1,11 +1,90 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import { Code } from 'astro:components';
 import Layout from '../layouts/Layout.astro';
+import Option from '../components/Option.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<marqu-eee class="bg-red-500">
+		<p class="text-3xl m-0">
+			You're good at what you can do and you can get better!
+		</p>
+	</marqu-eee>
+	<marqu-eee direction="down" center="x" behavior="alternate" class="h-32 text-center" duration="2s">
+			<h1 class="w-fit mx-auto m-0 text-red-700">marqu-eee</h1>
+			<img src="firebar.gif">
+	</marqu-eee>
+	<marqu-eee>
+		<p class="font-bold"> A web component for the 20th century</p>
+	</marqu-eee>
+	<marqu-eee direction="right">
+		<h2 class="text-green-500">Motivation</h2>
+	</marqu-eee>
+	<marqu-eee  duration="30" >
+		<div class="text-green-500">
+		<p>
+		The deprecation of the marquee tag is one of the greatest tragedies to befall software.
+		</p>
+		<p>
+What were they thinking, I ask you? What were they thinking? They have murdered whimsy in cold blood. The marquee tag was more than just a block of scrolling text—it was a revolution, a declaration that your website was alive, dynamic, and not afraid to scroll nonsensically in any direction it pleased. Did it clash with every design principle? Sure. Did it make accessibility advocates cry? Probably. But did it spark joy? Absolutely.
+		</p>
+		<p>
+		The marquee wasn’t just a feature; it was a vibe. A mood. An aesthetic. When you stumbled upon a site with a horizontal scroll of Comic Sans text in fluorescent green on a magenta background, you knew the webmaster meant business. And don’t even get me started on the diagonal scrolls! That was the pinnacle of digital art. A masterpiece that no amount of CSS animation trickery can replicate. “Use CSS instead,” they say, as though CSS animations could ever match the reckless abandon and raw power of a single self-contained tag that Just Worked™.
+			</p>
+		</div>
+	</marqu-eee>
+	
+	<marqu-eee direction="down" behavior="alternate" duration="4s" style="margin: 0 auto; width: 200px; height: 200px; border: solid;">
+		<marqu-eee behavior="alternate" duration="5s" >
+			<div class="flex flex-row">
+			<img src="question.gif" class="w-6 h-6">
+				<h2 style="width: fit-content;margin: 0; line-height:1;">Usage</h2>	
+			</div>
+		</marqu-eee>
+	</marqu-eee>
+	<marqu-eee>
+		<p>Using the component is super simple!</p>
+
+	</marqu-eee>
+	<marqu-eee>
+	<Code lang={"js"} style="width: fit-content"; code={`
+import "marqu-eee-wc"
+
+<marqu-eee>Hello</marqu-eee>
+
+
+`}/> 
+
+		<p class="w-64">There's also an IIFE build, but I can't figure out the unpkg URL. Figure it out yourself.</p>
+	</marqu-eee>
+	<marqu-eee class="text-blue-500 " direction="up" center="x">
+		<div class="border-2 border-neutral-100">
+
+		<h2>
+			It comes with plenty of cool options!
+	</h2>
+	<Option name="direction" values={["up", "down", "left", "right"]} description='Sets the direction the content will move in'></Option>
+	<Option name="behavior" values={["alternate", "slide", "scroll"]} description='Scroll scrolls endlessly, alternate bounces, and slide scrolls and then stops'></Option>
+		<Option name="center" values={["x", "y"]} description='Centers the content on the given axis'></Option>
+		<Option name="loop" values={["'infinite'", "number"]} description='Determines how many times the animation will loop'></Option>
+			<Option name="duration" values={["ms", "s", "number"]} description='The duration of the animation'></Option>
+
+		</div>
+	</marqu-eee>
+
+
 </Layout>
+<style>
+.hello {
+margin: 0;
+}
+
+marqu-eee *:not(marqu-eee) {
+	max-width: fit-content;
+}
+
+
+</style>
