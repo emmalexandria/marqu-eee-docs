@@ -7,6 +7,6 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://www.marquee.cool",
+	site: "https://marquee.cool",
 	integrations: [tailwind()]
 });
