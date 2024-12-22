@@ -8,14 +8,24 @@ import Option from '../components/Option.astro';
 ---
 
 <Layout>
-	<marqu-eee class="bg-red-500">
+		<marqu-eee class="bg-red-500">
 		<p class="text-3xl m-0">
 			You're good at what you can do and you can get better!
 		</p>
 	</marqu-eee>
+<marqu-eee class="absolute top-10 right-0 h-32 w-32 -translate-x-1/2" duration="5s" behavior="alternate" direction="down">
+		<marqu-eee behavior="alternate" duration="2s">
+		<img src="ielogo.gif" class="w-16">
+		</marqu-eee>
+	</marqu-eee>
+<marqu-eee class="absolute w-32 top-[2.25rem] left-0 " duration="5s" behavior="alternate" direction="right">
+		<img src="skeletonhang.gif" class="w-16">
+	</marqu-eee>
+
+
 	<marqu-eee direction="down" center="x" behavior="alternate" class="h-32 text-center" duration="2s">
 			<h1 class="w-fit mx-auto m-0 text-red-700">marqu-eee</h1>
-			<img src="firebar.gif">
+			<img src="firebar.gif" class="h-6">
 	</marqu-eee>
 	<marqu-eee>
 		<p class="font-bold"> A web component for the 20th century</p>
@@ -25,6 +35,9 @@ import Option from '../components/Option.astro';
 	</marqu-eee>
 	<marqu-eee  duration="30" >
 		<div class="text-green-500">
+			<marqu-eee direction="right" duration="10">
+				<img src="skeletonwalk.gif">
+			</marqu-eee>
 		<p>
 		The deprecation of the marquee tag is one of the greatest tragedies to befall software.
 		</p>
@@ -46,11 +59,13 @@ What were they thinking, I ask you? What were they thinking? They have murdered 
 		</marqu-eee>
 	</marqu-eee>
 	<marqu-eee>
+		<div class="flex flex-row ">
 		<p>Using the component is super simple!</p>
-
+			<img src="brazil.gif">
+		</div>
 	</marqu-eee>
 	<marqu-eee>
-	<Code lang={"js"} style="width: fit-content"; code={`
+	<Code  style="width: fit-content"; code={`
 import "marqu-eee-wc"
 
 <marqu-eee>Hello</marqu-eee>
