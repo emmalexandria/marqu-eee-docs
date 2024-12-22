@@ -15,8 +15,8 @@ importers:
         specifier: ^5.1.1
         version: 5.1.1(jiti@2.4.2)(rollup@4.29.1)(typescript@5.7.2)(yaml@2.6.1)
       marqu-eee-wc:
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: ^1.0.2
+        version: 1.0.2
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17
@@ -1290,8 +1290,8 @@ packages:
   markdown-table@3.0.4:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
 
-  marqu-eee-wc@1.0.1:
-    resolution: {integrity: sha512-XfIsQh1EZVNgBddsqZjEVWFE3CRbiZgtHS/0QK1pgl+AuiDkN7Dt8wCWdRToPyeyzd31EC0etBXkZl/aMOQJEg==}
+  marqu-eee-wc@1.0.2:
+    resolution: {integrity: sha512-pTZNWNplFbwkmBwNYzhWdaUAX14ut+4mv+QmCB/jbTk448O+yIAfE7tjBMrOWvJeeWGB7npT/2g7uKROY+j29g==}
 
   mdast-util-definitions@6.0.0:
     resolution: {integrity: sha512-scTllyX6pnYNZH/AIp/0ePz6s4cZtARxImwoPJ7kS42n+MnVsI4XbnG6d4ibehRIldYMWM2LD7ImQblVhUejVQ==}
@@ -3340,7 +3340,7 @@ snapshots:
 
   markdown-table@3.0.4: {}
 
-  marqu-eee-wc@1.0.1: {}
+  marqu-eee-wc@1.0.2: {}
 
   mdast-util-definitions@6.0.0:
     dependencies:
